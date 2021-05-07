@@ -96,3 +96,6 @@ This script now allows for the user to search through the UFO data by using the 
 If the user were to input search criteria into the filters such as 1/1/2010 into Date, ca into State, and triangle into Shape, the webpage would filter the UFO data and produce only data that matches the criteria:
 
 ![UFO Webpage Filters](static/images/webpage_filters.PNG)
+
+## Summary
+Overall, this webpage provides a useful and practical way for people to get an in-depth analysis of UFO sightings, allowing users to filter for multiple criteria at the same time. As with most projects, however, there is room for further development. One of the drawbacks of this webpage is that users must input the search criteria as all lowercase. For example, if a user were to input 'CA' instead of 'ca' in the State filter, the table would not produce data for California. One area of further development would be to allow for users to input whatever their desired case by using the .toLowerCase() function on the value of their search. Another area of further development could be to allow users to click the headers to sort the data by the specified column. For example, if the user wanted to sort the data ascendingly or descendingly by the duration, the user could click the 'Duration' header to sort the data.
