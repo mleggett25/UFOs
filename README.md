@@ -3,7 +3,7 @@
 ## Overview of Analysis
 
 ### Purpose
-The purpose of this project was to create a website that would provide an in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time.
+The purpose of this project was to create a webpage that would provide an in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time.
 
 ## Results: How to Perform a Search
 To allow the user to search through the UFO data, I created a container in the HTML file that would allow the user to filter the data based on five criteria: Date, City, State, Country, and Shape.
