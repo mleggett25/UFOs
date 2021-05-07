@@ -93,7 +93,7 @@ This script now allows for the user to search through the UFO data by using the 
 
 ![UFO Webpage No Filters](static/images/webpage_no_filters.PNG)
 
-If the user were to input search criteria into the filters such as 1/1/2010 into Date, ca into State, and triangle into Shape, the webpage would filter the UFO data and produce only data that matches the criteria:
+If the user were to input search criteria into the filters such as '1/1/2010' into Date, 'ca' into State, and 'triangle' into Shape, the webpage would filter the UFO data and produce only data that matches the criteria:
 
 ![UFO Webpage Filters](static/images/webpage_filters.PNG)
 
