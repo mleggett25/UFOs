@@ -42,7 +42,7 @@ To allow the user to search through the UFO data, I created a container in the H
 
 This script creates the Filter Search area on the webpage.
 
-![Filter Search Box](./images/filters.PNG)
+![Filter Search Box](static/images/filters.PNG)
 
 In order for the user-inputted search criteria to work on the UFO data, I had to create a function that saves the element, value, and ID of the filter that was changed.
 
@@ -95,4 +95,4 @@ This script now allows for the user to search through the UFO data by using the 
 
 If the user were to input search criteria into the filters such as 1/1/2010 into Date, ca into State, and triangle into Shape, the webpage would filter the UFO data and produce only data that matches the criteria:
 
-![UFO Webpage Filters](./images/webpage_filters.png)
+![UFO Webpage Filters](static/images/webpage_filters.PNG)
