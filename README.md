@@ -91,7 +91,7 @@ I then created a function that loops through the UFO data and keeps only the res
 
 This script now allows for the user to search through the UFO data by using the filter options. Here is the webpage as it exists without any filters:
 
-![UFO Webpage No Filters](./images/webpage_no_filters.png)
+![UFO Webpage No Filters](.static/images/webpage_no_filters.PNG)
 
 If the user were to input search criteria into the filters such as 1/1/2010 into Date, ca into State, and triangle into Shape, the webpage would filter the UFO data and produce only data that matches the criteria:
 
