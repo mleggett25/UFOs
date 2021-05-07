@@ -6,7 +6,7 @@
 The purpose of this project was to create a website that would provide an in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time.
 
 ## Results: How to Perform a Search
-To allow the user to search through the UFO data, I created a container that would allow the user to filter the data based on five criteria: Date, City, State, Country, and Shape.
+To allow the user to search through the UFO data, I created a container in the HTML file that would allow the user to filter the data based on five criteria: Date, City, State, Country, and Shape.
 
 ```
 <div class="container-fluid">
@@ -39,3 +39,60 @@ To allow the user to search through the UFO data, I created a container that wou
       </ul>
     </div>
  ```
+
+This script creates the Filter Search area on the webpage.
+
+![Filter Search Box](./images/filters.PNG)
+
+In order for the user-inputted search criteria to work on the UFO data, I had to create a function that saves the element, value, and ID of the filter that was changed.
+
+```
+var filters = {};
+
+function updateFilters() {
+
+    let changedElement = d3.select(this);
+    
+    let elementValue = changedElement.property("value");
+    console.log(elementValue)
+
+    let filterId = changedElement.attr("id");
+    console.log(filterId)
+
+    if (elementValue) {
+      filters[filterId] = elementValue;
+    }
+    else {
+      delete filters[filterId];
+    }
+  
+    filterTable();
+  }
+```
+
+I then created a function that loops through the UFO data and keeps only the results that match the user-inputted search criteria.
+
+```
+  function filterTable() {
+  
+    let filteredData = tableData;
+  
+    for (fil in filters) {
+      filteredData = filteredData.filter(row => row[fil] === filters[fil]);
+     };
+
+    buildTable(filteredData);
+    }
+
+  d3.selectAll("input").on("change", updateFilters);
+  
+  buildTable(tableData);
+```
+
+This script now allows for the user to search through the UFO data by using the filter options. Here is the webpage as it exists without any filters:
+
+![UFO Webpage No Filters](./images/webpage_no_filters.PNG)
+
+If the user were to input search criteria into the filters such as 1/1/2010 into Date, ca into State, and triangle into Shape, the webpage would filter the UFO data and produce only data that matches the criteria:
+
+![UFO Webpage Filters](./images/webpage_filters.PNG)
